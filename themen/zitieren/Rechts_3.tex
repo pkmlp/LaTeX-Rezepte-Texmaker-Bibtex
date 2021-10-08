@@ -1,0 +1,30 @@
+
+Die zitierten Quellen müssen in einer bib-Datei erfasst sein, anhand derer \LaTeX\ dann ein Literaturverzeichnis erstellen kann. In diesem Beispiel verwenden wir BibTex für die Verwaltung der Literatur. Ein sehr gutes Tutorial dazu finden Sie auf Wikipedia \footnote{\url{https://de.wikipedia.org/wiki/BibTeX}}.
+
+Die bib-Datei mit den Quellenangaben hat folgendes Format\footnote{Wurde in Basics Lunch Session 2 behandelt}:
+
+\begin{miniSeite}[colbacktitle=black!35!white,title=\LaTeX\ bib-Datei]
+
+\begin{verbatim}
+
+@MISC{Lamport2017,
+    AUTHOR     =  {Lamport, Leslie},
+    YEAR       =  {2017},
+    TITLE      =  {{LESLIE   LAMPORT'S   HOME   PAGE}},
+    URL        =  {http://lamport.org/},
+    NOTE       =  {Online; gesehen 20. September 2017}
+}
+
+@BOOK{Schlosser2017,
+  title        =  {Wissenschaftliche Arbeiten schreiben mit
+                  LaTeX: Leitfaden für Einsteiger, 6},
+  author       =  {Schlosser, Joachim},
+  year         =  {2017},
+  publisher    =  {MITP-Verlags GmbH \& Co. KG}
+}
+
+\end{verbatim}
+
+\end{miniSeite}
+
+Die Anzahl der Einträge spielt keine Rolle (solange die Einträge enthalten sind, die im Text zitiert/referenziert werden). Alle nicht im Text zitierten Quellen werden nicht im Literaturverzeichnis ausgegeben.

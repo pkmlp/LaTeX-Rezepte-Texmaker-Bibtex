@@ -1,0 +1,41 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% für mathematische Symbole und Formeln
+\usepackage{amsmath, amssymb}
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument: 
+
+\begin{verbatim}
+
+Da gibt es drei weitere Formeln, die jeder Obenstufenschüler kennt: 
+
+\begin{align}
+  (a+b)^{2}  &= a^{2} + 2ab + b^{2}   \label{eq:binome} \\
+  (a-b)^{2}  &= a^{2} - 2ab + b^{2}   \nonumber         \\
+  (a-b)(a+b) &= a^{2} - b^{2}         \nonumber
+\end{align}
+
+Die Binome \eqref{eq:binome}. Binome leiten sich von den Polynomen ab. 
+Polynome sind mathematische Ausdrücke, deren Glieder durch Addition und 
+Subtraktion verbunden sind. Diese Glieder können selber Produkte oder 
+Ähnliches sein. Binome bezeichnen Polynome, die zwei Glieder besitzen. 
+Entsprechend gibt es auch sogenannte Trinome, die drei Glieder besitzen 
+und Monome, die nur aus einem Glied bestehen. 
+
+\bigskip 
+
+Der Binomische Lehrsatz liefert eine Darstellung für beliebig hohe Potenzen 
+eines Binoms:
+
+\begin{equation}
+  (a+b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k
+\end{equation}
+
+\end{verbatim}
