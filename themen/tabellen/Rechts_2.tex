@@ -1,0 +1,36 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% Packages für Tabellen
+\usepackage{tabularx}
+\usepackage{booktabs}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument: 
+
+\begin{verbatim}
+
+An dieser Stelle eine erste Tabelle.
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{p{2cm} C{2cm} R{2cm}}
+\toprule
+\textbf{Wer}    &    Wo     &    \textit{Was}    \\ 
+\midrule
+\textbf{ich}    &    da     &    \textit{dies}   \\  
+\textbf{du}     &    hier   &    \textit{das}    \\ 
+\bottomrule
+\end{tabular}
+\caption{Eine erste \LaTeX-Tabelle}
+\end{center}
+\end{table}
+
+\end{verbatim}

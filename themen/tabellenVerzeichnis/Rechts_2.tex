@@ -1,0 +1,26 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% keine zusätzlcihen Packages für Tabellenverzeichnis
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument (an der Stelle, an der das Stichwortverzeichnis erscheinen soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+% Eintrag in ToC wird automatisch erstellt
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Tabellenverzeichnis 
+\newpage
+\listoftables
+
+\end{verbatim}
