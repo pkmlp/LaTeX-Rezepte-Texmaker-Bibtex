@@ -1,0 +1,28 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% keine weiteren Einträge nötig
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument (an der Stelle, an der das Stichwortverzeichnis erscheinen soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Stichwortverzeichisses
+% Eintrag in ToC wird automatisch erstellt
+\newpage
+\label{abbildungen}
+\listoffigures
+
+
+\end{verbatim}

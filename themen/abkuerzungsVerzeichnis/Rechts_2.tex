@@ -1,0 +1,30 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% keine zusätzlichen Packages für Tabellenverzeichnis
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument (an der Stelle, an der das Stichwortverzeichnis erscheinen soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Abkürzungsverzeichnis
+\newpage
+\section*{Abkürzungsverzeichnis} 
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\begin{acronym}[SEPSEPSEP]
+\setlength{\parskip}{0ex}
+\input{./verzeichnisse/abkuerzungen.tex}
+\end{acronym}
+
+\end{verbatim}
