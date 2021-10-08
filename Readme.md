@@ -7,4 +7,4 @@ Haben Sie selber schon Lösungen/Beispiele zu Themen und/oder Problemstellungen
 
 LaTeX ist nie Liebe auf den ersten Blick. LaTeX lernt man (mit zunehmender Erfahrung/Übung) lieben. Je mehr LaTeX-Rezepte hier versammelt sind, desto leichter fällt es zukünftigen Studierenden sich in LaTeX einzuarbeiten.
 
-Dieses Beispielist erstellt und getestet auf Windows mit Texmaker und Bibtex für die Literaturverwaltung.
+Dieses Beispiel ist erstellt und getestet auf Windows mit Texmaker und Bibtex für die Literaturverwaltung.
