@@ -1,0 +1,31 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% Packages für Literaturverzeichnis und Zitierungen
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
+\renewcommand*{\bibfont}{\raggedright}
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument (an der Stelle, an der das Quellen-/
+Literaturverzeichnis ausgegeben werden soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Quellen- / Literaturverzeichnis 
+\newpage
+\addcontentsline{toc}{section}{Quellen-/Literaturverzeichnis}
+\renewcommand{\refname}{Quellen-/Literaturverzeichnis} 
+\bibliography{./verzeichnisse/literatur}
+
+\end{verbatim}
