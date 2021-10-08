@@ -1,0 +1,30 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% Packages für Stichwortverzeichnis
+\usepackage{makeidx}
+\makeindex
+
+\end{verbatim}
+
+\tcblower
+
+Im Dokument (an der Stelle, an der das Stichwortverzeichnis erscheinen soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Stichwortverzeichisses mit Eintrag in ToC
+\newpage
+\addcontentsline{toc}{section}{Stichwortverzeichnis}
+\renewcommand{\indexname}{Stichwortverzeichnis \bigskip}
+\printindex
+
+
+\end{verbatim}

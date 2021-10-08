@@ -1,0 +1,44 @@
+
+In der Präambel:
+
+\begin{verbatim}
+
+% Packages für Mathe (Symbolverzeichnis)
+\usepackage{amsmath, amssymb, amsthm}
+
+\end{verbatim}
+
+\tcblower
+
+Erfassen der verwendeten Symbole in einer separaten Datei.
+
+\begin{verbatim}
+
+\begin{table}[h!]
+\noindent\begin{tabular}{@{}p{2cm}l}
+$\mathbf{N}$        & Menge aller natürlichen Zahlen ohne die Null \\
+$\mathbf{N}_{0}$    & Menge aller natürlichen Zahlen mit der Null \\
+$\pi$               & Die Kreiszahl Pi \\
+$\Omega$            & Der elektrische Widerstand Ohm \\
+$\boldsymbol\alpha$ & Alpha, der erste Buchstabe des griechischen Alphabetes \\
+\end{tabular}
+\end{table}
+
+\end{verbatim}
+
+Im Dokument (an der Stelle, an der das Symbolverzeichnis erscheinen soll): 
+
+\begin{verbatim}
+
+% Einfügen einer Leerseite ohne Seitenummer
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Erstellen des Symbolverzeichnis
+\newpage
+\section*{Symbolverzeichnis}
+\addcontentsline{toc}{section}{Symbolverzeichnis}
+\input{./verzeichnisse/symbole.tex}
+
+\end{verbatim}
